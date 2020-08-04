@@ -1,0 +1,900 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.clr{
+    clear: both;
+}
+/*=========Basic CSS End======*/
+
+/*=========preloader start======*/
+.preloader{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+}
+.load{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*=========preloader end======*/
+
+/*=========Header part css End=========*/
+.full-wrapper{
+    width: 100%;
+}
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all linear .3s;
+}
+.bg{
+    background-color:rgba(15, 15, 90, 0.74);
+    animation: menu 1s;
+}
+@keyframes menu{
+    from{
+        top: -90px;
+    }
+    to{
+        top: 0px;
+    }
+}
+.logo{
+    width: 170px;
+    float: left;
+    line-height:90px;
+    padding-top: 14px;
+}
+.menu{
+    width: 770px;
+    float: left;
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    padding-left: 25px;
+    line-height: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.menu ul li a:hover{
+    color: #00e0d0;
+}
+.menu ul li.active a{
+    color: #00e0d0;
+}
+/*=========Header part css End=========*/
+
+/*=========Banner part css start=========*/
+.banner{
+    width: 100%;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 220px;
+    padding-bottom: 70px;
+    background-color: black;
+    position: relative;
+}
+.banner::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(27, 18, 70, 0.84);
+}
+.banner-content{
+    position: relative;
+    z-index: 999;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 27px;
+    display: inline-block;
+}
+/*==========Typed css=========*/
+/*.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.banner-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 24px;
+    padding: 29px 125px 0 125px;
+}
+.banner-text p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00e0d0;
+    top: 69px;
+    left: 440px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 61px;
+    margin-bottom: 139px;
+}
+.btn a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    padding: 14px;
+}
+.dot{
+    text-align: center;
+}
+.dot ul li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #9a98a3;
+    display: inline-block;
+}
+.dot ul li:first-child{
+    background-color: #00e0d0;
+    border: none;
+    width: 7px;
+    height: 7px;
+}
+/*=========Banner part css End======*/
+
+/*=========About part css Start======*/
+.about{
+    padding-top: 62px;
+    background-color: #fff;
+}
+.about-left{
+    width: 380px;
+    float: left;
+    padding-top: 8px;
+    text-align: right;
+    
+}
+.about-left img{
+    margin-right: 100px;
+}
+.about-right{
+    width: 560px;
+    float: left;
+}
+.about-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.about-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #413d4b;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+.btn2{
+    text-align: left;
+    padding-bottom: 83px;
+}
+.btn2 a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    padding: 14px;
+}
+/*=========About part css End======*/
+
+/*=========video part css start======*/
+.video-bg{
+    background: url(../images/videoimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 220px 0;
+    position: relative;
+    text-align: center;
+}
+.video-bg:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(27, 18, 70, 0.84);
+}
+.video-bg i{
+    font-size: 70px;
+    color: #fff;
+    position: relative;
+    z-index: 99;
+}
+.video-bg h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff; 
+    text-transform: uppercase;
+    position: relative;
+    z-index: 999;
+    padding-top: 30px;
+}
+/*=========video part css End======*/
+
+/*=========Service part css start======*/
+.service-head{
+    padding-top: 64px;
+    text-align: center;
+}
+.service-head h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+}
+.service-head p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2f2d35;
+    padding-top: 10px;
+    position: relative;
+}
+.service-head p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #c6c4c9;
+    top: 46px;
+    left: 450px;
+}
+.service-item1{
+    padding-top: 90px;
+}
+.service-item2{
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+.service-item{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    
+}
+.service-item i{
+    font-size: 50px;
+    color: #02ded0
+}
+.service-item h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #413d4b; 
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.service-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 22px;
+    padding: 0 44px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+/*=========Service part css End======*/
+
+/*==========teams slick slider part start=========*/
+.team-bg{
+    background: url(../images/teamsbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 62px;
+    padding-bottom: 69px;
+    position: relative;
+}
+.team-bg::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(27, 18, 70, 0.84);
+}
+.team-content{
+    position: relative;
+    z-index: 9999;
+}
+.team-text{
+    text-align: center;
+}
+.team-text h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.team-text p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 8px;
+    position: relative;
+}
+.team-text p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #655c80;
+    top: 46px;
+    left: 450px;
+}
+.team-imgs{
+    width: 100%;
+    padding-top: 70px;
+}
+.team-image{
+    width: 218px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+}
+.mr-none{
+    margin-right: 0!important;
+}
+.team-image img{
+    width: 100%;
+}
+.team-image h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+}
+.team-image p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+.team-text-01{
+    text-align: center;
+}
+.team-text-01 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 65px;
+}
+.btn-03{
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 10px;
+}
+.btn-03 a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    padding: 10px 14px;
+}
+/*==========teams slick slider part end=========*/
+
+/*===========works part css start=========*/
+.works{
+    background-color: #fff;
+    position: relative;
+}
+.work-text{
+    text-align: center;
+}
+.work-text h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+.work-text p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2f2d35;
+    padding-top: 8px;
+}
+.works::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #c6c4c9;
+    top: 135px;
+    left: 440px;
+}
+.button h6{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f2d35;
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 3px;
+    transition: all linear .3s;
+    border-radius: 1px;
+    margin-top: 52px;
+}
+.button h6:hover{
+    background-color:rgba(20, 20, 244, 0.66);
+    color: #fff;
+}
+.work-up-img{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.work-img{
+    padding-top: 50px;
+}
+.work-item{
+    width: 16.66%;
+    float: left;
+    position: relative;
+}
+.work-item img{
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.overlay i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #678cf2;
+    color: #fff;
+    line-height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.work-item:hover .overlay{
+    opacity: 1;
+    width: 100%;
+}
+.btn-04{
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 82px;
+}
+.btn-04 a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    padding: 10px 14px;
+}
+/*===========works part css End=========*/
+
+/*===========peoplesay part css start=========*/
+.feedback-bg{
+    background: url(../images/people-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 138px;
+    position: relative;
+}
+.feedback-bg::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(27, 18, 70, 0.84);
+}
+.feedback-slider{
+    position: relative;
+    z-index: 99999;
+}
+.feedback-item {
+    text-align: center;
+    color: #fff;
+}
+.feedback-item p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    padding-bottom: 42px;
+    padding-top: 45px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.feedback-item h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 22px;
+}
+.feedback-item h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 22px;
+    padding-top: 12px;
+}
+
+.feedback-slider .slick-dots li{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+.feedback-slider .slick-dots li button {
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    background: #00e0d0;
+    border: 0;
+    opacity: 0;
+    transition: all linear .3s;
+    border-radius: 50%;
+}
+.feedback-slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -80px;
+    transform: translatex(-50%);
+}
+
+.feedback-slider .slick-dots li.slick-active button {
+    opacity: 1;
+}
+/*===========peoplesay part css End=========*/
+
+/*======contact part css start======*/
+.contact-section{
+    width: 940px;
+    padding-top: 70px;
+    overflow: hidden;
+}
+.contact{
+    width: 470px;
+    float: left;
+}
+.contact h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    padding-bottom: 25px;
+}
+.address{
+    padding: 12px 270px 12px 20px;
+    margin-bottom: 20px;
+}
+.msg-box{
+    padding: 20px 270px 166px 20px;
+}
+.btn-05{
+    padding-top: 35px;
+    padding-bottom: 82px;
+}
+.btn-05 a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: 1px solid #00e0d0;
+    padding: 10px 32px;
+    border-radius: 3px;
+}
+
+.Client{
+    width: 370px;
+    float: right;
+/*    padding-left: 100px;*/
+}
+.Client h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    padding-bottom: 35px;
+}
+.logoc{
+    padding-bottom: 30px;
+    width: 270px;
+    text-align: right;
+}
+.left{
+    width: 100px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    
+}
+.left img{
+    width: 100px;
+    height: 40px;
+}
+.right{
+    width:100px;
+    float: right;
+    text-align: center;
+    margin-right: -40px;
+}
+.right img{
+    width: 100px;
+    height: 40px;
+}
+/*======contact part css End======*/
+
+/*======Footer part css End======*/
+.footer{
+    background: url(../images/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 85px;
+    padding-bottom: 335px;
+    position: relative;
+}
+.footer::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(27, 18, 70, 0.84);
+}
+.footer-content{
+    position: relative;
+    z-index: 999999;
+}
+.footer-item{
+    width: 33.33%;
+    float:left;
+}
+.footer-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 26px;
+    padding-top: 15px;
+}
+.footer-item h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    padding-top: 75px;
+}
+span{
+    padding: 0 28px;
+}
+.footer-item h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 26px;
+    padding-bottom: 32px;
+}
+.location-icon{
+    float: left;
+     width: 10%;
+}
+.location-icon i{
+    color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+    padding-top: 12px;
+}
+.location-text{
+    float: left;
+    width: 90%;
+}
+.location-text p{
+    font-family: 'Roboto', sans-serif;   
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 26px;
+    padding-top: 12px;
+    padding-right: 25px;
+}
+.footer-item1 h4{
+    font-family: 'Roboto', sans-serif;   
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 26px;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 9px 34px 9px 25px;
+    margin-top: 16px;
+}
+.footer-item1 a{
+    color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+}
+.footer-item1{
+    float: left;
+}
+.footer-item1 img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.57);
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 10px 21px;
+    
+}
+.footer-icon1{
+    margin-top: 22px;
+    float: left;
+}
+.footer-icon1 i{
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 7px;
+}
+.footer-copy p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    text-align: right;
+    margin-top: 50px;
+}
+/*======Footer part css End======*/
+
+
+
+/*=======back-to-top css ========*/
+.back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+.back-to-top i{
+    font-size: 50px;
+    color: #17e6e6;
+}
+
+
+
+
+
+
+
