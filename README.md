@@ -5,7 +5,7 @@
     https://milton839.github.io/tajam/
 
 # My Website Features =>
-    1. This Website has six sections
+    1. This Website has eight sections
             1.Banner: Banner title used slider
             2.About: About this website and give a video section which is used by venobox in jQuery
             3.Expertise: This section which show expertise department
